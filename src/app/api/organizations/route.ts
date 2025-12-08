@@ -29,7 +29,7 @@ export async function POST(request: Request) {
       name: body.name,
       category: body.category,
       description: body.description || '',
-      tags: [body.category, 'Verified'], // Default tags
+      tags: [body.category], // Default tags
       website: body.website || '',
       image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80', // Default image
       verified: false,

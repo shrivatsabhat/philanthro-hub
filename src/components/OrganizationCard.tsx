@@ -35,7 +35,7 @@ export default function OrganizationCard({ organization }: OrganizationCardProps
             href={organization.website}
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.link}
+            className={styles.button}
           >
             Visit Website
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

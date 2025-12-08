@@ -94,7 +94,7 @@ export default function SubmitPage() {
           category: category,
           description: value.description,
           tags: [category, 'Pending Verification'],
-          image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80',
+          image: 'https://images.unsplash.com/photo-1501770118606-b1d640526693?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           verified: false,
         });
 
