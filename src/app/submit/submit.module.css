@@ -199,41 +199,60 @@
   transition: border-color 0.2s ease;
 }
 
-.checkboxGroup:hover {
-  border-color: var(--primary);
-}
+@media (max-width: 768px) {
+  .container {
+    padding: 100px var(--spacing-sm) 100px;
+    /* Extra bottom padding for sticky buttons */
+  }
 
-.checkbox {
-  width: 20px;
-  height: 20px;
-  margin-top: 2px;
-  accent-color: var(--primary);
-}
+  .formCard {
+    padding: 1.5rem;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
 
-.checkboxLabel {
-  font-size: 0.95rem;
-  color: var(--text-main);
-  font-weight: 500;
-  cursor: pointer;
-}
+  .title {
+    font-size: 2rem;
+  }
 
-.checkboxDescription {
-  display: block;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin-top: 0.2rem;
-}
+  .steps {
+    display: none;
+  }
 
-/* Abstract Background */
-.container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -20%;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
-  border-radius: 50%;
-  z-index: 0;
-  pointer-events: none;
+  .input,
+  .textarea,
+  .select {
+    font-size: 16px;
+    /* Prevent zoom on iOS */
+    padding: 1rem;
+  }
+
+  .checkboxGroup {
+    padding: 0.75rem;
+  }
+
+  .buttonGroup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    padding: 1rem;
+    margin: 0;
+    border-top: 1px solid var(--border);
+    z-index: 50;
+    flex-direction: row;
+    /* Keep side by side if possible, or stack if needed */
+    gap: 1rem;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .backButton,
+  .nextButton,
+  .submitButton {
+    flex: 1;
+    justify-content: center;
+    padding: 1rem;
+  }
 }

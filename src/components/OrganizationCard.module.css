@@ -125,3 +125,27 @@
   background: var(--primary);
   color: white;
 }
+
+@media (max-width: 768px) {
+  .imageWrapper {
+    height: 200px;
+  }
+
+  .content {
+    padding: 1.25rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .button {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}

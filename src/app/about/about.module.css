@@ -160,3 +160,32 @@
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 100px var(--spacing-sm) 40px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    word-wrap: break-word;
+  }
+
+  .mission {
+    font-size: 1.1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .step {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .stepNumber {
+    font-size: 2rem;
+    opacity: 0.5;
+  }
+}

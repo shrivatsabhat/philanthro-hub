@@ -112,26 +112,37 @@ export default function SearchFilter({
                 <line x1="9" y1="8" x2="15" y2="8"></line>
                 <line x1="17" y1="16" x2="23" y2="16"></line>
               </svg>
-              Filter {selectedCategories.length > 0 && `(${selectedCategories.length})`}
+              <span>Filter {selectedCategories.length > 0 && `(${selectedCategories.length})`}</span>
             </button>
 
             <div className={`${styles.dropdown} ${isDropdownOpen ? styles.open : ''}`}>
               <div className={styles.dropdownHeader}>
                 <div className={styles.dropdownTitleRow}>
                   <span className={styles.dropdownTitle}>Filter by Category</span>
-                  {selectedCategories.length > 0 && (
+                  <div style={{ display: 'flex', gap: '0.5rem' }}>
+                    {selectedCategories.length > 0 && (
+                      <button
+                        className={styles.clearIconButton}
+                        onClick={() => setSelectedCategories([])}
+                        title="Clear all filters"
+                      >
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M3 6h18"></path>
+                          <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                          <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                        </svg>
+                      </button>
+                    )}
                     <button
-                      className={styles.clearIconButton}
-                      onClick={() => setSelectedCategories([])}
-                      title="Clear all filters"
+                      className={styles.mobileCloseBtn}
+                      onClick={() => setIsDropdownOpen(false)}
                     >
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M3 6h18"></path>
-                        <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
-                        <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
                       </svg>
                     </button>
-                  )}
+                  </div>
                 </div>
                 <input
                   type="text"
@@ -173,6 +184,7 @@ export default function SearchFilter({
                 )}
               </div>
             </div>
+            {isDropdownOpen && <div className={styles.mobileOverlay} onClick={() => setIsDropdownOpen(false)} />}
           </div>
         </div>
       </div>
