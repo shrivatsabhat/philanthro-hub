@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "PhilanthroHub | Discover Verified Philanthropic Organizations",
   description: "Browse government-approved charities and nonprofits making a real difference. Find trusted organizations aligned with your values.",
+  verification: {
+    google: "yYZVLGpldDpXRz-EeFwW7o28pUFgaw7TQx9acLtXXSM",
+  },
 };
 
 export default function RootLayout({

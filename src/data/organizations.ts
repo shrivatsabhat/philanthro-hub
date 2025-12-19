@@ -221,5 +221,16 @@ export const initialOrganizations: Organization[] = [
     image: 'https://images.unsplash.com/photo-1591228127791-8e2eaef098d3?q=80&w=1000&auto=format&fit=crop',
     verified: true,
     country: 'Global',
+  },
+  {
+    id: '21',
+    name: 'Isha Foundation',
+    description: 'A non-profit spiritual organization founded by Sadhguru, dedicated to human well-being and offering yoga programs for inner transformation.',
+    category: 'Spiritual & Wellness',
+    tags: ['Yoga', 'Meditation', 'Environment', 'Rural Development'],
+    website: 'https://isha.sadhguru.org/in/en',
+    image: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1000&auto=format&fit=crop',
+    verified: true,
+    country: 'Global',
   }
 ];
