@@ -211,4 +211,15 @@ export const initialOrganizations: Organization[] = [
     verified: true,
     country: 'India',
   },
+  {
+    id: '20',
+    name: 'Art of Living',
+    description: 'A non-profit, educational and humanitarian organization founded by Gurudev Sri Sri Ravi Shankar, offering stress-elimination and self-development programs.',
+    category: 'Spiritual & Wellness',
+    tags: ['Yoga', 'Meditation', 'Stress Management', 'Humanitarian Aid'],
+    website: 'https://www.artofliving.org/in-en',
+    image: 'https://images.unsplash.com/photo-1591228127791-8e2eaef098d3?q=80&w=1000&auto=format&fit=crop',
+    verified: true,
+    country: 'Global',
+  }
 ];
