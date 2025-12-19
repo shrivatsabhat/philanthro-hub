@@ -60,6 +60,7 @@ export const initialOrganizations: Organization[] = [
     id: '6',
     name: 'TechForGood',
     description: 'Leveraging technology to solve social problems and bridge the digital divide in marginalized communities.',
+    // change NAME of tag
     category: 'Technology',
     tags: ['Digital Inclusion', 'Innovation', 'Coding'],
     website: 'https://www.code.org', // Placeholder
@@ -173,7 +174,7 @@ export const initialOrganizations: Organization[] = [
     category: 'Elderly Care',
     tags: ['Old Age Home', 'Care', 'Dignity'],
     website: 'https://www.wishesandblessings.net',
-    image: 'https://images.unsplash.com/photo-1551191983-4a673cb77692?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?q=80&w=1000&auto=format&fit=crop',
     verified: true,
     country: 'India',
   },
