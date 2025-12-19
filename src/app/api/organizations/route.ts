@@ -33,6 +33,7 @@ export async function POST(request: Request) {
       website: body.website || '',
       image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80', // Default image
       verified: false,
+      country: body.country || 'Global',
     };
 
     organizations.unshift(newOrganization); // Add to beginning of list

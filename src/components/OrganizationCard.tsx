@@ -19,6 +19,16 @@ export default function OrganizationCard({ organization }: OrganizationCardProps
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className={styles.categoryBadge}>{organization.category}</div>
+        {organization.country && (
+          <div className={styles.countryBadge}>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            {organization.country}
+          </div>
+        )}
       </div>
       <div className={styles.content}>
         <h3 className={styles.name}>{organization.name}</h3>

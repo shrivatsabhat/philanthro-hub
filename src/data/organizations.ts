@@ -10,6 +10,7 @@ export const initialOrganizations: Organization[] = [
     website: 'https://www.unicef.org', // Placeholder
     image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'Global',
   },
   {
     id: '2',
@@ -20,6 +21,7 @@ export const initialOrganizations: Organization[] = [
     website: 'https://www.worldwildlife.org', // Placeholder
     image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'Global',
   },
   {
     id: '3',
@@ -30,6 +32,7 @@ export const initialOrganizations: Organization[] = [
     website: 'https://www.savethechildren.org', // Placeholder
     image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'Global',
   },
   {
     id: '4',
@@ -40,6 +43,7 @@ export const initialOrganizations: Organization[] = [
     website: 'https://www.doctorswithoutborders.org', // Placeholder
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'Global',
   },
   {
     id: '5',
@@ -50,6 +54,7 @@ export const initialOrganizations: Organization[] = [
     website: 'https://www.charitywater.org', // Placeholder
     image: 'https://images.unsplash.com/photo-1538300342682-cf57afb97285?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'Global',
   },
   {
     id: '6',
@@ -60,6 +65,7 @@ export const initialOrganizations: Organization[] = [
     website: 'https://www.code.org', // Placeholder
     image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'Global',
   },
   {
     id: '7',
@@ -70,6 +76,7 @@ export const initialOrganizations: Organization[] = [
     website: 'https://www.giveindia.org',
     image: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'India',
   },
   {
     id: '8',
@@ -80,6 +87,7 @@ export const initialOrganizations: Organization[] = [
     website: 'https://www.akshayapatra.org',
     image: 'https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'India',
   },
   {
     id: '9',
@@ -90,16 +98,18 @@ export const initialOrganizations: Organization[] = [
     website: 'https://goonj.org',
     image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'India',
   },
   {
     id: '10',
     name: 'Smile Foundation',
     description: 'Working for the education, healthcare, and livelihood of underprivileged children and women.',
     category: 'Education & Health',
-    tags: ['Child Education', 'Women Empowerment', 'Healthcare'],
+    tags: ['Education', 'Global'],
     website: 'https://www.smilefoundationindia.org',
-    image: 'https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80',
     verified: true,
+    country: 'India',
   },
   {
     id: '11',
@@ -110,6 +120,7 @@ export const initialOrganizations: Organization[] = [
     website: 'https://www.cry.org',
     image: 'https://images.unsplash.com/photo-1607748862156-7c548e7e98f4?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'India',
   },
   {
     id: '12',
@@ -118,8 +129,9 @@ export const initialOrganizations: Organization[] = [
     category: 'Elderly Care',
     tags: ['Elderly Care', 'Healthcare', 'Advocacy'],
     website: 'https://www.helpageindia.org',
-    image: 'https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1528642474498-1af0c17fd8c3?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'India',
   },
   {
     id: '13',
@@ -130,6 +142,7 @@ export const initialOrganizations: Organization[] = [
     website: 'https://www.dhyanfoundation.com',
     image: 'https://images.unsplash.com/photo-1541600383005-565c949cf777?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'India',
   },
   {
     id: '14',
@@ -140,6 +153,7 @@ export const initialOrganizations: Organization[] = [
     website: 'https://www.krishnayan.org',
     image: 'https://images.unsplash.com/photo-1596733430284-f7437764b1a9?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'India',
   },
   {
     id: '15',
@@ -150,6 +164,7 @@ export const initialOrganizations: Organization[] = [
     website: 'https://www.agewellfoundation.org',
     image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'India',
   },
   {
     id: '16',
@@ -158,8 +173,9 @@ export const initialOrganizations: Organization[] = [
     category: 'Elderly Care',
     tags: ['Old Age Home', 'Care', 'Dignity'],
     website: 'https://www.wishesandblessings.net',
-    image: 'https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551191983-4a673cb77692?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'India',
   },
   {
     id: '17',
@@ -170,6 +186,7 @@ export const initialOrganizations: Organization[] = [
     website: 'https://friendicoes.org',
     image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'India',
   },
   {
     id: '18',
@@ -180,6 +197,7 @@ export const initialOrganizations: Organization[] = [
     website: 'https://www.peopleforanimalsindia.org',
     image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=1000&auto=format&fit=crop',
     verified: true,
+    country: 'India',
   },
   {
     id: '19',
@@ -190,5 +208,6 @@ export const initialOrganizations: Organization[] = [
     website: 'https://www.resqct.org',
     image: 'https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?q=80&w=1000&auto=format&fit=crop',
     verified: true,
-  }
+    country: 'India',
+  },
 ];

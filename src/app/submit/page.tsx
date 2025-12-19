@@ -14,6 +14,7 @@ import FieldError from '@/components/FieldError';
 const organizationSchema = z.object({
   name: z.string().min(3, 'Organization name is required and must be at least 3 characters'),
   website: z.string().url('Please enter a valid website URL (starting with http:// or https://)'),
+  country: z.string().min(1, 'Please select a country of operation'),
   category: z.string().min(1, 'Please select a primary category'),
   otherCategory: z.string(),
   description: z.string().min(20, 'Please provide a description of at least 20 characters'),
@@ -67,6 +68,7 @@ export default function SubmitPage() {
     defaultValues: {
       name: '',
       website: '',
+      country: '',
       category: '',
       otherCategory: '',
       description: '',
@@ -91,6 +93,7 @@ export default function SubmitPage() {
         await createOrganization.mutateAsync({
           name: value.name,
           website: value.website,
+          country: value.country,
           category: category,
           description: value.description,
           tags: [category, 'Pending Verification'],
@@ -231,6 +234,33 @@ export default function SubmitPage() {
                         className={styles.input}
                         placeholder="https://example.org"
                       />
+                      <FieldError errors={field.state.meta.errors} />
+                    </div>
+                  )}
+                />
+
+                <form.Field
+                  name="country"
+                  children={(field) => (
+                    <div className={styles.formGroup}>
+                      <label htmlFor={field.name} className={styles.label}>Country of Operation</label>
+                      <select
+                        id={field.name}
+                        name={field.name}
+                        value={field.state.value}
+                        onBlur={() => field.handleBlur()}
+                        onChange={(e) => field.handleChange(e.target.value)}
+                        className={styles.select}
+                      >
+                        <option value="">Select a country</option>
+                        <option value="Global">Global</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Other">Other</option>
+                      </select>
                       <FieldError errors={field.state.meta.errors} />
                     </div>
                   )}
